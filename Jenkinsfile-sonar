@@ -1,9 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven 3.8.5'  // Adjust if needed
-    }
+  
 
     environment {
         SONAR_TOKEN = credentials('sonar-token')  // The ID you used in credentials
